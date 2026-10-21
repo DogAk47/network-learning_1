@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#f7f7f3">
+  <title>網路原理自學室｜Chapter 1–2</title>
+  <meta name="description" content="計算機網路第一、二章：白話教學、互動計算、分章理解測驗，可完全離線使用。">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="shell" id="app">
+  <aside class="sidebar" id="sidebar" aria-label="課程選單">
+    <div class="brand">
+      <div class="brand-mark" aria-hidden="true"><span>⌁</span></div>
+      <div><div class="brand-name">NETWORK LAB</div><div class="brand-sub">計算機網路 · 自學室</div></div>
+      <button class="icon-btn close-nav" id="closeNav" title="關閉目錄" aria-label="關閉目錄">✕</button>
+    </div>
+    <button class="nav-primary active" data-view="home"><span>◈</span> 學習總覽 <span class="nav-arrow">↗</span></button>
+    <div class="sidebar-label">學習路線</div>
+    <div class="group-title"><span class="group-dot blue"></span> 第一章 <small>網路基礎</small></div>
+    <div class="lesson-nav" id="nav-ch1"></div>
+    <div class="group-title"><span class="group-dot orange"></span> 第一章 <small>計算與題型</small></div>
+    <div class="lesson-nav" id="nav-calc1"></div>
+    <div class="group-title"><span class="group-dot teal"></span> 第二章 <small>應用層</small></div>
+    <div class="lesson-nav" id="nav-ch2"></div>
+    <div class="group-title"><span class="group-dot lilac"></span> 第二章 <small>計算與題型</small></div>
+    <div class="lesson-nav" id="nav-calc2"></div>
+    <div class="sidebar-footer"><div class="footer-cap">你的閱讀進度</div><div class="mini-progress"><div id="sidebarProgress"></div></div><div class="footer-small" id="sidebarProgressText">尚未開始</div></div>
+  </aside>
+  <div class="scrim" id="scrim"></div>
+  <div class="main-area">
+    <header class="topbar">
+      <div class="top-left"><button class="icon-btn mobile-menu" id="openNav" title="開啟目錄" aria-label="開啟目錄">☰</button><span class="eyebrow">YOUR STUDY SPACE</span><span class="top-divider"></span><span id="breadcrumbs" class="breadcrumb">總覽</span></div>
+      <div class="top-actions"><button class="top-link" data-view="quiz">題庫練習</button><button class="top-link" data-view="tools">公式工具</button><button class="icon-btn" id="themeToggle" title="切換深淺色" aria-label="切換深淺色">☾</button></div>
+    </header>
+    <main id="content" tabindex="-1"></main>
+    <footer class="page-footer">依上傳筆記整理 · 額外教學補充會與原筆記分開標示 · 可離線使用</footer>
+  </div>
+</div>
+<script src="lessons.js"></script>
+<script src="questions.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
